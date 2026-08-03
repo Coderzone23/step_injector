@@ -50,4 +50,4 @@ You can find the generated APK at: build/app/outputs/flutter-apk/app-release.apk
 Since this app interacts directly with sensitive health data, Android might block the permission popup if running in debug mode.
 Manual Override: If you see a "Permission denied by user!" message, go to your phone's Settings > Health Connect > App Permissions > step_injector and manually allow "Write Steps".
 
-Developed with ❤️ by Souvik Das
+                      Developed with ❤️ by Souvik Das
