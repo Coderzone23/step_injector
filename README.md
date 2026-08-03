@@ -1,53 +1,140 @@
-# Step Injector Hacker 🏃‍♂️💨
+# 🏃 Step Injector Hacker
 
-A powerful and seamless Flutter application designed to manually inject custom step counts directly into **Google Fit** and **Samsung Health** using the new Android 14+ **Health Connect API**. 
+A powerful Flutter application that allows you to manually inject custom step counts into **Google Fit** and **Samsung Health** using the **Android Health Connect API**.
 
-Whether you are a developer testing fitness data syncing or just want to hit your daily step goals from your couch, this app does the heavy lifting for you! 
+Built primarily for developers, testers, and Health Connect integration experiments, the app provides a simple interface for writing step data directly to supported health platforms.
+
+> **Note:** This project is intended for development, testing, and educational purposes.
+
+---
 
 ## ✨ Features
-* **Instant Step Injection:** Add any number of steps (e.g., 5000, 10000) with a single click.
-* **Health Connect Integration:** Fully compatible with the latest Android security and Health Connect API policies.
-* **Permission Bypass:** Custom-configured Android Manifest and XML files to smoothly handle strict Samsung/Android background permission blocks.
-* **Cross-Platform Ready:** Built with Flutter, ensuring a smooth and responsive UI.
 
-## 🛠️ Tech Stack
-* **Framework:** Flutter / Dart
-* **Native Android:** Kotlin (FragmentActivity mapping)
-* **Permissions Handling:** Android Manifest (XML)
-* **Health API:** Google Health Connect
+- 🚀 Inject any custom step count instantly (e.g., 1,000 • 5,000 • 10,000+)
+- ❤️ Native integration with **Google Health Connect**
+- 📱 Compatible with **Google Fit** and **Samsung Health** (via Health Connect)
+- 🔐 Handles Android Health Connect permission flow
+- ⚡ Fast and lightweight Flutter interface
+- 🎨 Clean Material Design UI
 
-## 🚀 How to Run Locally
+---
 
-### Prerequisites
-1. Install [Flutter SDK](https://flutter.dev/docs/get-started/install).
-2. Ensure you have an Android Emulator (with Play Store support) or a physical Android device running Android 14+.
-3. Install **Health Connect by Google** on the testing device.
+## 🛠 Tech Stack
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/Coderzone23/step_injector.git](https://github.com/Coderzone23/step_injector.git)
-Navigate to the project directory:
+| Technology | Description |
+|------------|-------------|
+| Flutter | Cross-platform UI Framework |
+| Dart | Application Logic |
+| Kotlin | Native Android Integration |
+| Health Connect API | Reading & Writing Health Data |
+| Android Manifest (XML) | Permission Configuration |
 
-Bash
+---
+
+## 📱 Requirements
+
+- Flutter SDK (Latest Stable)
+- Android Studio
+- Android 14+ (Recommended)
+- Google Health Connect installed
+- Physical Android device or Emulator with Play Store support
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Coderzone23/step_injector.git
+```
+
+### 2. Navigate to the Project
+
+```bash
 cd step_injector
-Get the required packages:
+```
 
-Bash
+### 3. Install Dependencies
+
+```bash
 flutter pub get
-Run the app:
+```
 
-Bash
+### 4. Run the Application
+
+```bash
 flutter run
-📦 How to Build the Release APK
-To generate a fast, optimized, and shareable APK file, run:
+```
 
-Bash
+---
+
+## 📦 Build Release APK
+
+Generate an optimized release APK:
+
+```bash
 flutter build apk --release
-You can find the generated APK at: build/app/outputs/flutter-apk/app-release.apk
+```
 
-⚠️ Important Note on Permissions
-Since this app interacts directly with sensitive health data, Android might block the permission popup if running in debug mode.
-Manual Override: If you see a "Permission denied by user!" message, go to your phone's Settings > Health Connect > App Permissions > step_injector and manually allow "Write Steps".
+The APK will be generated at:
 
-                      Developed with ❤️ by Souvik Das
+```text
+build/app/outputs/flutter-apk/app-release.apk
+```
+
+---
+
+## 🔐 Permissions
+
+This application writes health data using **Health Connect**.
+
+If Android blocks the permission dialog or you receive a **Permission denied** message:
+
+**Settings → Health Connect → App Permissions → Step Injector → Allow "Write Steps"**
+
+On some devices, especially in debug builds, permissions may need to be granted manually.
+
+---
+
+## 📂 Project Structure
+
+```
+lib/
+ ├── main.dart
+ ├── screens/
+ ├── services/
+ └── widgets/
+
+android/
+ ├── app/
+ ├── AndroidManifest.xml
+ └── Kotlin/
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions, bug reports, and feature requests are welcome.
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Developer
+
+**Souvik Das**
+
+GitHub: https://github.com/Coderzone23
+
+Made with ❤️ using Flutter.
